@@ -5,7 +5,7 @@
                 <li v-for="(item,index) in blockArray"
                     :key="index"
                     class="text-lightColor-400 hover:text-violetColor-500 "
-                    :class="{'active:bg-violetColor-500 active:rounded-md active:text-lightColor-100':index === activeIndex}"
+                    :class="{'hover:bg-violetColor-500 hover:rounded-md hover:text-lightColor-100 hover:cursor-pointer':index === activeIndex}"
                     @click="activeIndex =index"
                 >
                 {{blockArray[index].title}}
