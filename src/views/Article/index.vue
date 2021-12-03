@@ -19,8 +19,7 @@ export default {
   data () {
     return {
       titileName: ['新聞', '股市', '拍賣', '購物中心'],
-      activeIndex: 0,
-      isActive: false
+      activeIndex: 0
     }
   }
 }

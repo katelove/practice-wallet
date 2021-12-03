@@ -15,6 +15,9 @@ module.exports = {
       }
     },
     colors: {
+      violetColor: {
+        500: '#564ce0'
+      },
       primaryColor: {
         100: '#FFE4BC',
         200: '#FEC36B',
