@@ -17,7 +17,7 @@ const routes = [
   },
   {
     path: '/nav',
-    name: 'Navl',
+    name: 'Nav',
     component: () => import('@/components/Nav')
   },
   {

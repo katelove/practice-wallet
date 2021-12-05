@@ -48,7 +48,8 @@ module.exports = {
         300: '#E8E8E8',
         400: '#DDDDDD',
         500: '#D1D2D2'
-      }
+      },
+      greyShadow: 'rgba(50,51,52,0.4)'
     },
     extend: {}
   },

@@ -1,53 +1,51 @@
 <template lang="">
   <header>
-    <nav class="bg-darkColor-200">
+    <nav class="bg-darkColor-200 flex justify-between mx-auto">
       <!-- pc -->
-      <div class="sm:hidden mx-[15px] flex justify-start items-center">
-        <div>
-          <img src="@/assets/icon/logo.png" />
-        </div>
-        <ul class="flex justify-start">
-          <li class="mx-[15px]">
-            <NavLink link="Home">Home</NavLink>
-          </li>
-          <li class="mx-[15px]">
-            <NavLink link="About">About</NavLink>
-          </li>
-          <li class="mx-[15px]">
-            <NavLink link="Article">Article</NavLink>
-          </li>
-        </ul>
+      <div class="m-[10px]">
+        <router-link to="nav"><img src="@/assets/icon/logo.png" /></router-link>
       </div>
+      <ul class="flex items-center lg:flex hidden">
+        <li class="mx-[15px]">
+          <NavLink link="Home">Home</NavLink>
+        </li>
+        <li class="mx-[15px]">
+          <NavLink link="About">About</NavLink>
+        </li>
+        <li class="mx-[15px]">
+          <NavLink link="Article">Article</NavLink>
+        </li>
+      </ul>
       <!-- mobile -->
-      <div class="lg:hidden md:hidden bg-lightColor-200">
-        <div>
+      <div class="lg:hidden flex items-center cursor-pointer" @click="openMenu">
         <img src="@/assets/icon/hamburger.png" />
       </div>
       <!-- mobile page -->
-        <transition name="fade">
-          <ul >
-            <li>
-              <NavLink link="Home">Home</NavLink>
-            </li>
-            <li>
-              <NavLink link="About">About</NavLink>
-            </li>
-            <li>
-              <NavLink link="Article">Article</NavLink>
-            </li>
-          </ul>
-        </transition>
-         </div>
+      <Menu v-show="showMenu" @closeModel="close"/>
     </nav>
   </header>
 </template>
 <script>
 import NavLink from '@/components/Nav/NavLink.vue'
+import Menu from '@/components/Nav/Menu.vue'
 export default {
   name: 'Nav',
+  data () {
+    return {
+      showMenu: false
+    }
+  },
   components: {
-    NavLink
+    NavLink,
+    Menu
+  },
+  methods: {
+    openMenu () {
+      this.showMenu = true
+    },
+    close () {
+      this.showMenu = false
+    }
   }
 }
 </script>
-<style lang=""></style>
