@@ -1,6 +1,6 @@
 <template>
     <transition name="fade">
-        <div class="bg-lightColor-200 fixed w-[350px] h-[100vh]">
+        <div class="bg-lightColor-200 fixed w-[350px] h-[100vh] right-0 top-0">
             <div class="w-[36px] h-[36px] cursor-pointer" @click="closeMenu">
                 <img src="@/assets/icon/close.png">
             </div>
