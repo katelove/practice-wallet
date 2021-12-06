@@ -25,7 +25,7 @@ export default {
 </script>
 <style lang="scss" scope>
 .wallet-home{
-  position: relative;
+  width: 100%;
   section{
     height: 100%;
     width: 100%;

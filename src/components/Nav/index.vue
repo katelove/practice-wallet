@@ -1,6 +1,6 @@
 <template lang="">
-  <header class="fixed absolute">
-    <nav class="bg-lightColor-100 flex justify-between mx-auto p-[10px] z-1">
+  <header class="fixed absolute w-full">
+    <nav class="flex justify-between mx-auto z-1 items-center h-[40px] p-[30px]">
       <!-- pc -->
       <div class="flex items-center justify-start">
         <div>
