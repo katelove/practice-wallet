@@ -16,9 +16,9 @@ const routes = [
     component: () => import('@/views/About.vue')
   },
   {
-    path: '/nav',
-    name: 'Nav',
-    component: () => import('@/components/Nav')
+    path: '/wallet',
+    name: 'Wallet',
+    component: () => import('@/views/Wallet')
   },
   {
     path: '/navlink',

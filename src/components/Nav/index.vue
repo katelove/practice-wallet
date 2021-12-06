@@ -1,10 +1,10 @@
 <template lang="">
-  <header>
-    <nav class="bg-darkColor-200 flex justify-between mx-auto p-[10px] z-1">
+  <header class="fixed absolute">
+    <nav class="bg-lightColor-100 flex justify-between mx-auto p-[10px] z-1">
       <!-- pc -->
       <div class="flex items-center justify-start">
         <div>
-          <router-link to="nav"><img src="@/assets/icon/logo.png" /></router-link>
+          <router-link to="Home"><img src="@/assets/icon/logo.png" /></router-link>
         </div>
         <ul class="lg:flex hidden">
           <li class="mx-[15px]">
