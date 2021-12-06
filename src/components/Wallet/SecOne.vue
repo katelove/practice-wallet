@@ -30,10 +30,10 @@
       </div>
       <div class="bg-img h-screen lg:hidden"></div>
       <div class="bg-img">
-        <div class="bg01 sm:flex hidden"></div>
-        <div class="bg02 sm:flex hidden"></div>
-        <div class="bg03 sm:flex hidden"></div>
-        <div class="bg04 sm:flex hidden"></div>
+        <div class="bg01 lg:flex hidden"></div>
+        <div class="bg02 lg:flex hidden"></div>
+        <div class="bg03 lg:flex hidden"></div>
+        <div class="bg04 lg:flex hidden"></div>
       </div>
     </div>
   </div>
