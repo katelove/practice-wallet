@@ -4,7 +4,9 @@
         <section>
         <SecOne/>
         </section>
-        <section></section>
+        <section>
+          <SecTwo/>
+        </section>
         <section></section>
         <section></section>
         <section></section>
@@ -14,11 +16,13 @@
 <script>
 import Nav from '@/components/Nav/index.vue'
 import SecOne from '@/components/Wallet/SecOne.vue'
+import SecTwo from '@/components/Wallet/SecTwo.vue'
 export default {
   name: 'WalletPage',
   components: {
     Nav,
-    SecOne
+    SecOne,
+    SecTwo
   }
 
 }
