@@ -47,7 +47,8 @@ module.exports = {
         200: '#F4F4F4',
         300: '#E8E8E8',
         400: '#DDDDDD',
-        500: '#D1D2D2'
+        500: '#D1D2D2',
+        600: '#f8f9ff'
       },
       greyShadow: 'rgba(50,51,52,0.4)'
     },
