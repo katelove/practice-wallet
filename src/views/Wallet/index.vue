@@ -11,7 +11,10 @@
       <SecThree />
     </section>
     <section>
-      <Card/>
+      <div class="bg-violetColor-500 h-[460px] ">
+        <h1 class="text-center text-lightColor-100 font-bold pt-[110px] pb-[80px] text-[24px]">为何选择 Taylor Wallet</h1>
+        <Card :cardTotal=3 />
+      </div>
     </section>
     <section></section>
     <section></section>
