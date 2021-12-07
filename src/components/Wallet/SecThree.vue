@@ -1,10 +1,11 @@
 <template lang="">
   <div class="max-[1024px] mx-auto">
-    <div
-      class="flex flex-col md:flex-row-reverse justify-center items-center bg-lightColor-600"
+    <div v-for="(item,index) in proTotal" :key="index+1"
+      class="flex flex-col justify-center items-center bg-lightColor-600"
+      :class="[(index+1) === 1 || (index+1) === 3 ?'md:flex-row-reverse':'md:flex-row']"
     >
       <div>
-        <img src="@/assets/wallet/pro01.png" />
+        <img :src="require(`@/assets/wallet/pro0${index+1}.png`)"/>
       </div>
       <div>
         <h2 class="text-[32px] mb-[45px] font-bold">
@@ -21,6 +22,13 @@
   </div>
 </template>
 <script>
-export default {}
+export default {
+  name: 'SecThree',
+  data () {
+    return {
+      proTotal: 4
+    }
+  }
+}
 </script>
 <style lang=""></style>
