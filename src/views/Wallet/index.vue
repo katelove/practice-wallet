@@ -15,8 +15,14 @@
         <h1 class="text-center text-lightColor-100 font-bold pt-[110px] pb-[80px] text-[24px]">为何选择 Taylor Wallet</h1>
         <Card :cardTotal=3 />
       </div>
+      <div></div>
     </section>
-    <section></section>
+    <section class="pt-[170px] pb-[190px]">
+      <div>
+        <h1 class="text-center text-darkColor-300 font-bold pb-[80px] text-[32px]">支持主流稳定币 USDT, BTC, ETH, RTX, LTC...</h1>
+        <CarouselCard :cardTotal=5 />
+      </div>
+    </section>
     <section></section>
   </div>
 </template>
@@ -26,6 +32,7 @@ import SecOne from '@/components/Wallet/SecOne.vue'
 import SecTwo from '@/components/Wallet/SecTwo.vue'
 import SecThree from '@/components/Wallet/SecThree.vue'
 import Card from '@/components/Wallet/Card.vue'
+import CarouselCard from '@/components/Wallet/CarouselCard.vue'
 export default {
   name: 'WalletPage',
   components: {
@@ -33,7 +40,8 @@ export default {
     SecOne,
     SecTwo,
     SecThree,
-    Card
+    Card,
+    CarouselCard
   }
 }
 </script>

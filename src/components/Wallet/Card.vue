@@ -1,8 +1,8 @@
 <template lang="">
-    <div class="flex justify-around items-center">
+    <div class="flex flex-col justify-around items-center lg:flex-row">
      <div
       v-for="(item,index) in cardTotal" :key="index+1"
-      class="flex items-center flex-col justify-center rounded-xl bg-lightColor-100 p-[34px] shadow-lg w-[335px] h-[325px]">
+      class="flex items-center flex-col justify-center rounded-xl bg-lightColor-100  mb-[30px] p-[34px] shadow-lg w-[335px] h-[325px]">
         <div>
             <img :src="require(`@/assets/wallet/good0${index+1}.png`)" class="w-[90px] h-[90px]">
         </div>

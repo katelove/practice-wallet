@@ -16,7 +16,7 @@
           通过跨区转账和跨链转账<br />
           实现了资产从BTC链、ETH链等转入Taylor链
         </p>
-        <img src="@/assets/wallet/line.png" class="mt-[40px]" />
+        <img src="@/assets/wallet/line.png" class="mt-[40px] mb-[30px]" />
       </div>
     </div>
   </div>
