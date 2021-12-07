@@ -10,7 +10,9 @@
     <section>
       <SecThree />
     </section>
-    <section></section>
+    <section>
+      <Card/>
+    </section>
     <section></section>
     <section></section>
   </div>
@@ -20,13 +22,15 @@ import Nav from '@/components/Nav/index.vue'
 import SecOne from '@/components/Wallet/SecOne.vue'
 import SecTwo from '@/components/Wallet/SecTwo.vue'
 import SecThree from '@/components/Wallet/SecThree.vue'
+import Card from '@/components/Wallet/Card.vue'
 export default {
   name: 'WalletPage',
   components: {
     Nav,
     SecOne,
     SecTwo,
-    SecThree
+    SecThree,
+    Card
   }
 }
 </script>

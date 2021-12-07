@@ -50,7 +50,9 @@ module.exports = {
         500: '#D1D2D2',
         600: '#f8f9ff'
       },
-      greyShadow: 'rgba(50,51,52,0.4)'
+      greyShadow: {
+        100: 'rgba(50,51,52,0.4)'
+      }
     },
     extend: {}
   },
